@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="65.82972mm"
+   height="70.733543mm"
+   viewBox="0 0 65.82972 70.733543"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="musicmap.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-object-midpoints="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="false"
+     inkscape:object-nodes="true"
+     inkscape:zoom="1.4823793"
+     inkscape:cx="69.482889"
+     inkscape:cy="131.20798"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid13050"
+       originx="-24.320464"
+       originy="-48.722182" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path23957" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient17575">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0"
+         id="stop17571" />
+      <stop
+         style="stop-color:#fe8b00;stop-opacity:1"
+         offset="0.16666667"
+         id="stop21494" />
+      <stop
+         style="stop-color:#fef300;stop-opacity:1"
+         offset="0.33333334"
+         id="stop21300" />
+      <stop
+         style="stop-color:#31fe00;stop-opacity:1"
+         offset="0.5"
+         id="stop20082" />
+      <stop
+         style="stop-color:#00d2fa;stop-opacity:1"
+         offset="0.66666669"
+         id="stop19376" />
+      <stop
+         style="stop-color:#0019e7;stop-opacity:1"
+         offset="0.83333331"
+         id="stop19054" />
+      <stop
+         style="stop-color:#fc00ff;stop-opacity:1"
+         offset="1"
+         id="stop17573" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient17575"
+       id="linearGradient23470"
+       x1="24.412964"
+       y1="107.51963"
+       x2="90.057533"
+       y2="107.51963"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,-91.91986,-184.14684)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.320463,-48.722184)">
+    <path
+       id="path3621"
+       style="opacity:1;fill:url(#linearGradient23470);fill-opacity:1;stroke:#000000;stroke-width:3.77952761;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stroke-dashoffset:0;stroke-linecap:round;paint-order:normal"
+       d="M 50.246094 0 C 14.362016 20.7286 2.0712714 66.620578 22.791016 102.50977 C 24.727063 105.84827 26.919021 109.03076 29.34375 112.03125 A 98.827604 98.827604 0 0 1 66.65625 69.931641 C 61.866519 65.574242 57.762169 60.513376 54.486328 54.921875 C 44.875417 38.186917 43.317543 18.011781 50.246094 0 z M 198.32812 0.001953125 C 205.25668 18.013734 203.6988 38.18887 194.08789 54.923828 C 190.81205 60.515329 186.7077 65.576195 181.91797 69.933594 A 98.827604 98.827604 0 0 1 219.23047 112.0332 C 221.6552 109.03272 223.84716 105.85022 225.7832 102.51172 C 246.50295 66.622531 234.2122 20.730553 198.32812 0.001953125 z M 124.28711 62.080078 A 98.827603 98.827603 0 0 0 25.458984 160.90625 A 98.827603 98.827603 0 0 0 27.068359 176.75 L 42.267578 172.67773 A 83.086343 83.086343 0 0 1 41.201172 160.90625 A 83.086343 83.086343 0 0 1 73.097656 95.701172 A 60.341508 47.820046 0 0 0 79.802734 102.69727 A 83.086342 83.086342 0 0 1 124.28711 89.746094 A 83.086342 83.086342 0 0 1 168.77148 102.69727 A 60.341508 47.820046 0 0 0 175.47656 95.701172 A 83.086343 83.086343 0 0 1 207.37305 160.90625 A 83.086343 83.086343 0 0 1 206.44141 172.65234 L 221.68945 176.73633 A 98.827603 98.827603 0 0 0 223.11328 160.90625 A 98.827603 98.827603 0 0 0 124.28711 62.080078 z M 48.154297 176.9043 C 47.408149 176.91257 46.650044 177.01436 45.894531 177.2168 L 25.921875 182.56836 C 21.08659 183.86397 18.235639 188.79948 19.53125 193.63477 L 37.484375 260.63672 C 38.779986 265.472 43.715497 268.32295 48.550781 267.02734 L 68.525391 261.67383 C 73.360675 260.37822 76.211626 255.44271 74.916016 250.60742 L 56.962891 183.60547 C 55.869719 179.5257 52.183494 176.85962 48.154297 176.9043 z M 200.65039 176.9043 C 196.62119 176.85963 192.93692 179.5257 191.84375 183.60547 L 173.89062 250.60742 C 172.59502 255.44271 175.44401 260.37822 180.2793 261.67383 L 200.25391 267.02734 C 205.08919 268.32295 210.02471 265.47201 211.32031 260.63672 L 229.27344 193.63477 C 230.56904 188.79948 227.72005 183.86396 222.88477 182.56836 L 202.91016 177.2168 C 202.15464 177.01436 201.39654 176.91257 200.65039 176.9043 z M 14.597656 193.57422 C 14.519148 193.57896 14.43867 193.59046 14.355469 193.60938 C 14.048307 193.68005 13.706833 193.85142 13.337891 194.16992 C 7.576375 199.14416 -1.9462155 213.65849 0.34960938 222.22656 L 1.2324219 225.51562 L 5.6972656 242.17969 L 6.578125 245.46875 C 8.8739499 254.03679 24.376745 261.84415 31.853516 263.27148 C 34.40667 263.75878 34.144531 261.07422 34.144531 261.07422 L 16.419922 194.92773 C 16.419922 194.92773 15.775284 193.50304 14.597656 193.57422 z M 234.20898 193.57422 C 233.03136 193.50304 232.38477 194.92773 232.38477 194.92773 L 214.66016 261.07422 C 214.66016 261.07422 214.39802 263.75878 216.95117 263.27148 C 224.42794 261.84415 239.93074 254.03675 242.22656 245.46875 L 243.10938 242.17969 L 247.57422 225.51562 L 248.45508 222.22656 C 250.7509 213.65849 241.22831 199.14416 235.4668 194.16992 C 235.09785 193.85142 234.75833 193.68005 234.45117 193.60938 C 234.36797 193.59046 234.28749 193.57896 234.20898 193.57422 z "
+       transform="matrix(0.26458333,0,0,0.26458333,24.320463,48.722184)" />
+  </g>
+</svg>

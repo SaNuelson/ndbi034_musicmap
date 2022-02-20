@@ -1,5 +1,8 @@
 .idea/
 node_modules/
 package-lock.json
-views/python/res/
-views/python/.cache
+/server/__pycache__
+/server/.cache
+/server/spotify_credentials.txt
+/server/data
+/server/res
