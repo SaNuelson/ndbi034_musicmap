@@ -1,4 +1,4 @@
-from typing import List, Union, Callable, Dict
+from typing import List, Union, Callable, Dict, Coroutine
 import file_manager
 import info_aggregator
 import time
@@ -9,10 +9,10 @@ GLOBAL_LOG_LEVEL = 1
 
 class ProgressListener:
     progress: float = 0
-    on_complete: Callable[[], None]
-    on_progress: Callable[[float], None]
-    on_error: Callable[[str], None]
-    on_start: Callable[[], None]
+    on_complete: Callable[[], Coroutine]
+    on_progress: Callable[[float], Coroutine]
+    on_error: Callable[[str], Coroutine]
+    on_start: Callable[[], Coroutine]
     log_level: int = GLOBAL_LOG_LEVEL
 
     def __init__(self, on_progress, on_complete=None, on_error=None, on_start=None):
@@ -21,29 +21,29 @@ class ProgressListener:
         self.on_error = on_error
         self.on_start = on_start
 
-    def start(self):
+    async def start(self):
         if self.log_level > 0:
             print("ProgListener start.")
         if self.on_start is not None:
-            self.on_start()
+            await self.on_start()
 
-    def set_progress(self, value):
+    async def set_progress(self, value):
         if self.log_level > 0:
             print("ProgListener set_progress ", value)
-        self.on_progress(value)
+        await self.on_progress(value)
         self.progress = value
 
-    def end(self):
+    async def end(self):
         if self.log_level > 0:
             print("ProgListener end.")
         if self.on_complete is not None:
-            self.on_complete()
+            await self.on_complete()
 
-    def fail(self, reason):
+    async def fail(self, reason):
         if self.log_level > 0:
             print("ProgListener fail.")
         if self.on_error is not None:
-            self.on_error(reason)
+            await self.on_error(reason)
 
 class Request:
     id: str
@@ -55,15 +55,15 @@ class Request:
     def set_progress_listener(self, pl: ProgressListener):
         self.pl = pl
 
-    def execute(self) -> Dict:
+    async def execute(self) -> Dict:
         raise NotImplementedError("Base class execute called")
 
 
 class BatchLoadRequest(Request):
-    def execute(self) -> Dict:
-        self.pl.start()
+    async def execute(self) -> Dict:
+        await self.pl.start()
         results = file_manager.getall().to_dict()
-        self.pl.end()
+        await self.pl.end()
         return results
 
 
@@ -74,17 +74,17 @@ class SingleLoadRequest(Request):
         super().__init__(rid)
         self.uri = uri
 
-    def execute(self, progress_listener: ProgressListener = None) -> Dict:
+    async def execute(self, progress_listener: ProgressListener = None) -> Dict:
         return info_aggregator.save_playlist(self.uri, self.pl).to_dict()
 
 
 class ProgressTestRequest(Request):
-    def execute(self) -> Dict:
-        self.pl.start()
+    async def execute(self) -> Dict:
+        await self.pl.start()
         for i in range(10):
-            await asyncio.sleep(0.1)
-            self.pl.set_progress(i / 10)
-        self.pl.end()
+            await asyncio.sleep(0.5)
+            await self.pl.set_progress(i * 10)
+        await self.pl.end()
         return {'time': 1}
 
 

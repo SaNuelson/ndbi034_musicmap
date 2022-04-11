@@ -1,7 +1,12 @@
 import { React, Component } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 class Navigation extends Component {
+	constructor(props) {
+		super();
+	}
+
   render() {
     return (
       <Navbar bg="light" expand="lg">
@@ -10,13 +15,19 @@ class Navigation extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+							<LinkItem name="Home" path="/" />
+							<LinkItem name="SpotifyBrowser" path="/spotify" />
+							<LinkItem name="About" path="/about" />
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     );
   }
+}
+
+function LinkItem(props) {
+	return (<Nav.Link as={NavLink} to={props.path}>{props.name}</Nav.Link>);
 }
 
 export default Navigation;
