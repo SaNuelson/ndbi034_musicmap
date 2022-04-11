@@ -7,10 +7,3 @@ MusicMap
 # Current state
 
 - in dev
-- structure:
-```
-- client (contains React webpage used as GUI)
-- server (contains most of the app's logic)
-  - 
-
-```
